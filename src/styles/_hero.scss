@@ -1,13 +1,52 @@
+@use 'variaveis';
+
 .hero {
     padding: 5.6vw;
     min-height: 80vh;
     background-image: url(../images/hero_yj_desktop.png);
+    text-align: center;
     background-size: contain;  
     background-repeat: no-repeat;
-    width: 100%;
     background-position: right;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
 
     &__content {
         max-width: 640px;
+
+        &__branding {
+            width: 320px;
+            height: auto;
+            margin: 0 auto;
+            align-items: center;
+
+            & img {
+                width: 40vw;
+                align-items: center;
+                background-position-y: center;
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 35px;
+
+            & button {
+                flex: 1;
+                min-width: 150px;
+                height: 60px;
+                font-size: 18px;
+                color: variaveis.$corDeFundo;
+                background-color: variaveis.$corBotao;
+                text-transform: uppercase;
+                margin-right: 10px;
+                border-radius: 4px;
+            }
+        }
     }
 }
