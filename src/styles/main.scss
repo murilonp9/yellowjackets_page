@@ -1,6 +1,8 @@
 @use 'variaveis';
 @use 'hero';
 @use 'shows';
+@use 'elenco-yj';
+@use 'footer';
 
 @font-face {
     font-family: Roboto;
@@ -31,6 +33,10 @@ body {
 
 .text--big {
     @include text(18px);
+
+    @media (max-width: 768px) {
+        padding: 10%;
+    }
 }
 
 .text {

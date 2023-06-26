@@ -1,0 +1,17 @@
+.elenco-yj {
+    padding: 5.6vw;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+
+        @media (max-width: 768px) {
+            display: block;
+            padding: 10%;
+        }
+    }   
+
+    div {
+        text-align: center;
+    }
+}
